@@ -4,7 +4,6 @@ import { Card } from "./ui/Card";
 import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
-import pic from "@/app/assets/picture.jpg";
 
 export default async function Home() {
   const user = await getUser();
@@ -22,7 +21,7 @@ export default async function Home() {
           src={"https://imgur.com/hh3L4zd.jpeg"}
           width={300}
           height={500}
-          alt="Нурия Мустафовна"
+          alt="Нурия"
         />
         {user && (
           <Link
