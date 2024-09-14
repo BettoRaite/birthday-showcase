@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1726226807741,
+      "tag": "0000_sturdy_dazzler",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1726244022083,
+      "tag": "0001_certain_amazoness",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1726316015960,
+      "tag": "0002_fast_beyonder",
+      "breakpoints": true
+    }
+  ]
+}
