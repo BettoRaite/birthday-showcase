@@ -5,7 +5,7 @@ import { getUser } from "./actions/auth/actions";
 import { Navbar } from "./ui/Navbar";
 
 const nunito = localFont({
-  src: "./fonts/Nunito-VF.ttf",
+  src: "./assets/fonts/Nunito-VF.ttf",
   variable: "--font-nunito",
   weight: "500",
 });

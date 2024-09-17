@@ -34,11 +34,9 @@ export async function updateSession(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   const { pathname } = request.nextUrl;
-  console.log("Current pathname:", pathname); // Debugging log
 
   if (!user && pathname.startsWith("/wish")) {
-    console.log("Redirecting to /login"); // Debugging log
-    return NextResponse.redirect(new URL("/login", request.url));
+    return NextResponse.redirect(new URL("/", request.url));
   }
   // IMPORTANT: You *must* return the supabaseResponse object as it is. If you're
   // creating a new response object with NextResponse.next() make sure to:

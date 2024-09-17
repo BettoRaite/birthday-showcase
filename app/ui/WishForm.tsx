@@ -66,7 +66,7 @@ export function WishForm() {
               )}
               name="authorName"
               id="authorName"
-              placeholder="Анон"
+              placeholder=""
             />
           </div>
           {touched.authorName && (
@@ -100,7 +100,7 @@ export function WishForm() {
               "h-0 opacity-0": values.role !== "студент",
             })}
           >
-            <label htmlFor="group">Группа</label>
+            <label htmlFor="group">Группа *</label>
             <Field
               className={clsx(
                 "border-1 rounded-lg p-2 outline-none focus:border-slate-400 transition-all duration-200 text-slate-600",
@@ -124,7 +124,7 @@ export function WishForm() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label htmlFor="content">Ваше пожелание:</label>
+            <label htmlFor="content">Ваше пожелание</label>
             <Field
               className={clsx(
                 "border-1 rounded-lg p-2 outline-none focus:border-slate-400 transition-all duration-200 resize-none min-h-60 text-slate-600",

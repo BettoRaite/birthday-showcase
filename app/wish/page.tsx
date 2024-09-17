@@ -8,17 +8,14 @@ export default async function Wish() {
     <main className="min-h-svh flex items-center justify-center my-4">
       {!hasCreated && <WishForm />}
       {hasCreated && (
-        <section className="bg-fuchsia-200 self-start text-center w-11/12 rounded-lg shadow-lg p-4">
-          <h2 className="text-3xl font-bold">
-            Спасибо за написание пожелания!
-          </h2>
+        <section className="self-start text-center w-11/12 rounded-lg shadow-lg p-4">
+          <h2 className="text-3xl font-bold">Готово 💙</h2>
           <p>
-            Вы можете вернусь обратно по этой
-            <Link className="bg-blue-300" href={"/"}>
-              {" "}
+            Теперь вы можете вернуться обратно по этой{" "}
+            <Link className="bg-blue-300 px-2 rounded-lg text-white" href={"/"}>
               ссылке
             </Link>
-            , либо кпопке сверху
+            , либо кпопке сверху.
           </p>
         </section>
       )}

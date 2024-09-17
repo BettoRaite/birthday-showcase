@@ -1,7 +1,7 @@
 "use server";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
-import { createClient } from "@/app/utils/supabase/server";
+import { createClient } from "@/app/lib/utils/supabase/server";
 const DOMAIN = process.env.DOMAIN;
 
 export async function signInWithPopup() {

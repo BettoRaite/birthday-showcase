@@ -41,8 +41,10 @@ export default async function Home() {
         )}
       </section>
       <section>
-        <h2 className="text-3xl font-bold text-center my-8">Пожелания</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-8">
+        <h2 className="text-3xl font-bold text-center m-auto my-8 border-1 rounded-lg m-w-11/12 p-4">
+          Да-да мы вас тоже любим! 💗
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
           {wishes?.map((item) => {
             return <Card key={item.id} item={item} />;
           })}
