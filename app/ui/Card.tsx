@@ -6,6 +6,7 @@ type CardProps = {
 };
 const SPECIAL_GROUP_CODE = "23-03";
 export function Card({ item }: CardProps) {
+  const { content, authorName } = item;
   return (
     <section
       className={clsx(
@@ -18,14 +19,15 @@ export function Card({ item }: CardProps) {
       {/* <div className="absolute inset-0 rounded-lg opacity-20 bg-gradient-to-r from-pink-500 to-yellow-400" /> */}
 
       <div className="relative z-10 text-center text-gray-400">
-        <h1 className="text-4xl text-gray-400 font-extrabold  mb-2">
+        <h1 className="text-4xl text-gray-600 font-extrabold  mb-2">
           🎉 Happy Birthday! 🎉
         </h1>
-        <p className="text-lg text-gray-400  mb-4">{item.content}</p>
+        <p className="text-lg text-gray-600 font-bold  mb-4">{content}</p>
         <p className="text-sm text-gray-400  italic">
-          От {item.authorName ?? "Аноним"}
+          От {authorName ?? "Аноним"}
         </p>
       </div>
+      {/* <p className="absolute bottom-2 right-4 text?-orange-300  ">{group}</p> */}
     </section>
   );
 }
